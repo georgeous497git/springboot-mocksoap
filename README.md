@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+# springboot-mocksoap
+En este proyecto podrás visualizar como generar un Web Service simulado a partir de un WSDL
 
-You can use the [editor on GitHub](https://github.com/georgeous497git/springboot-mocksoap/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## 1. Introducci&oacute;n. 
+Basados en un proyecto Spring Boot expondr&eacute; un Web Service SOAP a partir de un WSDL proporcionado por un proveedor utilizando el Framework CXF de Apache para la construcci&oacute;n de las clases definidas en el esquema proporcionado.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+* Insumos
+  * Spring Boot 2.2.6
+  * Maven 3.6.3
+  * Java JDK 1.8.0_241
+  * CXF Apache 3.3.6
+  * SOAP UI 5.5.0
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 2. Instalaci&oacute;n
 
-```markdown
-Syntax highlighted code block
+**a)** Creaci&oacute;n de proyecto Spring Boot
 
-# Header 1
-## Header 2
-### Header 3
+![Genera Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/001.png)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+**b)** Configuraci&oacute;n de paquetes proyecto Spring Boot
 
-**Bold** and _Italic_ and `Code` text
+![Configura Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/002.png)
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**c)** Selecci&oacute;n de *Starter Web* proyecto Spring Boot
 
-### Jekyll Themes
+![Starter Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/003.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/georgeous497git/springboot-mocksoap/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+**d)** Validaci&oacute;n y ejecuci&oacute;n inicial de proyecto generado
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![Validacion Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/004.png)
+![Ejecucion Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/004_1.png)
+
+
+**e)** Descarga e instalaci&oacute;n del WSDL ejemplo en el proyecto _http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL_
+
+![Descarga WSDL](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/006.png)
+![Instalacion WSDL](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/009.png)
+
+
+**f)** Instalaci&oacute;n del archivo binding.xml requerido por el plugin CXF
+
+![Binding CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/012.png)
+
+
+**g)** Configuraci&oacute;n de plugin CXF Apache en POM del proyecto
+
+![Configuracion CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/013.png)
+
+
+**h)** Construcci&oacute;n de proyecto 
+
+![Construccion proyecto](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/013_1.png)
+
+
+**i)** Validaci&oacute;n de clases generadas por el plugin CXF Apache
+
+![Validacion clases CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/014.png)
+
+
+
