@@ -14,33 +14,33 @@ Al finalizar el tutorial tendr&aacute;s como resultado un Web Service SOAP expue
 __________________________________________________________________
 ## 1. Inicio e Instalaci&oacute;n
 
-**a)** Creaci&oacute;n de proyecto Spring Boot
+**a)** Creaci&oacute;n de proyecto Spring Boot<br>
 ![Genera Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/001.png)
 __________________________________________________________________
-**b)** Configuraci&oacute;n de paquetes proyecto Spring Boot
+**b)** Configuraci&oacute;n de paquetes proyecto Spring Boot<br>
 ![Configura Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/002.png)
 __________________________________________________________________
-**c)** Selecci&oacute;n de *Starter Web* proyecto Spring Boot
+**c)** Selecci&oacute;n de *Starter Web* proyecto Spring Boot<br>
 ![Starter Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/003.png)
 __________________________________________________________________
-**d)** Validaci&oacute;n y ejecuci&oacute;n inicial de proyecto generado
-![Validacion Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/004.png)
+**d)** Validaci&oacute;n y ejecuci&oacute;n inicial de proyecto generado<br>
+![Validacion Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/004.png)<br>
 ![Ejecucion Spring Boot](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/004_1.png)
 __________________________________________________________________
-**e)** Descarga e instalaci&oacute;n del WSDL ejemplo en el proyecto. (URL de descarga de WSDL: _http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL_)
-![Descarga WSDL](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/006.png)
+**e)** Descarga e instalaci&oacute;n del WSDL ejemplo en el proyecto.<br>(URL de descarga de WSDL: _http://wsf.cdyne.com/WeatherWS/Weather.asmx?WSDL_)<br>
+![Descarga WSDL](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/006.png)<br>
 ![Instalacion WSDL](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/009.png)
 __________________________________________________________________
-**f)** Instalaci&oacute;n del archivo _binding.xml_ requerido por el plugin CXF
+**f)** Instalaci&oacute;n del archivo _binding.xml_ requerido por el plugin CXF<br>
 ![Binding CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/012.png)
 __________________________________________________________________
-**g)** Configuraci&oacute;n de plugin CXF Apache en POM del proyecto
+**g)** Configuraci&oacute;n de plugin CXF Apache en POM del proyecto<br>
 ![Configuracion CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/013.png)
 __________________________________________________________________
-**h)** Construcci&oacute;n de proyecto 
+**h)** Construcci&oacute;n de proyecto<br>
 ![Construccion proyecto](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/013_1.png)
 __________________________________________________________________
-**i)** Validaci&oacute;n de clases generadas por el plugin CXF Apache
+**i)** Validaci&oacute;n de clases generadas por el plugin CXF Apache<br>
 ![Validacion clases CXF](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/014.png)
 
 ________________________________________________________________________________________________________________________
@@ -49,8 +49,7 @@ ________________________________________________________________________________
 
 **_i. Exposici&oacute;n de Web Service (Clase Java)_**
 
-Generar la clase con la que se expondr&aacute; el Web Service con ayuda de las anotaciones _@WebService_ y _@SOAPBinding_
-![WebService](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/015.PNG)
+Generar la clase con la que se expondr&aacute; el Web Service con ayuda de las anotaciones _@WebService_ y _@SOAPBinding_  ![WebService](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/015.PNG)
 
 Con el objetivo de simular el servicio como si realmente estuviera funcional debemos considerar agregar las propiedades necesarias en la anotaci&oacute;n _@WebService_.
 
@@ -89,7 +88,7 @@ En este apartado es donde se har&aacute; uso de la clase previamente generada qu
 
 Aqu&iacute; vamos a utilizar la anotaci&oacute;n _@WebMethod_ junto con la propiedad _operationName_ para generar la operaci&oacute;n del Web Service.
 
-Si a&uacute;n no tienes indentificados que m&eacute;todos son los que deber&iacute;an generarse, basta con indentificar dentro del WSDL ejemplo los elementos `<wsdl:operation>`, los cuales, en este caso ser&iacute;an _GetCityForecastByZIP_, _GetCityForecastByZIP_ y _GetCityWeatherByZIP_.
+Si a&uacute;n no tienes indentificados que m&eacute;todos son los que deber&iacute;an generarse, basta con indentificar dentro del WSDL ejemplo los elementos `<wsdl:operation>`, los cuales, en este caso ser&iacute;an _GetCityForecastByZIP_, _GetCityForecastByZIP_ y _GetCityWeatherByZIP_.  
 
     <wsdl:portType name="WeatherSoap">
 		<wsdl:operation name="GetWeatherInformation">
@@ -136,8 +135,7 @@ Considerando el elemento `<wsdl:output message="tns:GetCityForecastByZIPSoapOut"
 
 Aqu&iacute; se identifica como el objeto response del m&eacute;todo web la clase Java _GetCityForecastByZIPResponse_
 _______________________________________
-Es as&iacute; como se podr&aacute; generar en la clase Java el m&eacute;todo web _GetCityForecastByZIP_
-![M&eacute;todo web](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/017.PNG)
+Es as&iacute; como se podr&aacute; generar en la clase Java el m&eacute;todo web _GetCityForecastByZIP_  ![M&eacute;todo web](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/017.PNG)
 
 
 
