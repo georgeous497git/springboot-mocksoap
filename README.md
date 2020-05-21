@@ -80,7 +80,7 @@ S&oacute;lo para hacerlo m&aacute;s elegante se hace uso de la anotaci&oacute;n 
 
 En este apartado es donde se har&aacute; uso de la clase previamente generada que contiene la anotaci&oacute;n _@WebService_
 
-    NOTA: En el ejemplo se asume que el puerto por defecto que utiliza Tomcat es el _8080_ y para exponer el WS ser&aacute; sobre el puerto _8084_.
+    NOTA: En el ejemplo se asume que el puerto por defecto que utiliza Tomcat es el 8080 y para exponer el WS usaremos el puerto 8084.
 
 ![Endpoint](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/016.PNG)
 
