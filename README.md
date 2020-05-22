@@ -1,3 +1,5 @@
+![Presentacion](https://github.com/georgeous497git/springboot-mocksoap/blob/master/img/miniatura.png)
+
 # Web Service SOAP con Spring Boot
 En este mini-tutorial basados en un proyecto Spring Boot expondr&eacute; un Web Service SOAP a partir de un WSDL proporcionado por un proveedor utilizando el Framework CXF de Apache para la construcci&oacute;n de las clases definidas en el esquema proporcionado.
 
